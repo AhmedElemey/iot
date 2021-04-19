@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:easacc_task/provider/google_sign_in.dart';
 import 'package:easacc_task/screens/bluetooth_screen.dart';
 import 'package:easacc_task/screens/home_screen.dart';
+import 'package:easacc_task/screens/bluetooth_screen.dart';
 import 'package:easacc_task/screens/logged_in_google.dart';
 import 'package:easacc_task/screens/settingPage_screen.dart';
 import 'package:easacc_task/screens/socialLogin_faceBook_screen.dart';
@@ -48,8 +49,9 @@ Future main() async {
           WebViewPage.routeName: (ctx) => WebViewPage(),
           LoggedInGoogle.routeName: (ctx) => LoggedInGoogle(),
           LoginScreenFaceBook.routeName: (ctx) => LoginScreenFaceBook(),
-          BlueToothScreen.routeName: (ctx) => BlueToothScreen(),
           WifiScreen.routeName: (ctx) => WifiScreen(),
+          BlueToothScreen.routeName: (ctx) =>
+              BlueToothScreen("The PDF you gonna print"),
         },
       ),
     ),
